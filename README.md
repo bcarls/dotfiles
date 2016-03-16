@@ -1,6 +1,6 @@
 # dotfiles
 
-The repository storing all of my dotfiles. To install:
+This repository stores all of my dotfiles. To install:
 
 ```
 git clone https://github.com/bcarls/dotfiles .
