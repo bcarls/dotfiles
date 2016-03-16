@@ -14,3 +14,5 @@
 # Ignore the vim-plug stuff, the vimrc will grab this stuff
 .vim/autoload/**
 
+# Ignore the init.vim files neovim wants
+.vim/init.vim
