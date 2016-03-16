@@ -10,3 +10,7 @@
 
 # Ignore the installed plugins
 .vim/plugged/**
+
+# Ignore the vim-plug stuff, the vimrc will grab this stuff
+.vim/autoload/**
+
