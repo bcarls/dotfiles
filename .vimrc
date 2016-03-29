@@ -11,12 +11,12 @@ autocmd BufNewFile,BufRead *.tex setlocal spell " Turn on spell check for Latex
 
 
 " ==================================================================================
-" Setup tab and related options
+" Setup tab and related options, let vim-sleuth adjust it
 " ==================================================================================
 set autoindent 
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=8
+set softtabstop=4
 set wildmenu
 set wildmode=list:longest,full
 "set nohidden
