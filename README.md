@@ -3,8 +3,9 @@
 This repository stores all of my dotfiles. To install:
 
 ```
-git clone https://github.com/bcarls/dotfiles .
-chmod +x .setup_dotfiles.sh
+git init
+git remote add origin https://github.com/bcarls/dotfiles
+git pull origin master
 ./.setup_dotfiles.sh
 ```
 
