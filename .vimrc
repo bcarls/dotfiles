@@ -85,7 +85,8 @@ Plug 'https://github.com/LaTeX-Box-Team/LaTeX-Box.git'
 Plug 'https://github.com/vim-scripts/LanguageTool.git'
 Plug 'https://github.com/junegunn/fzf.vim.git'
 Plug 'https://github.com/itchyny/lightline.vim.git'
-Plug 'https://github.com/scrooloose/syntastic.git'
+" Plug 'https://github.com/scrooloose/syntastic.git'
+Plug 'https://github.com/benekastah/neomake.git'
 Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/tpope/vim-sensible.git'
@@ -160,7 +161,13 @@ let g:lightline = {
 \}
 
 
+""""""""""""""""""""""""""""""
+" Set up neomake
+""""""""""""""""""""""""""""""
 
+" Check syntax upon save
+" autocmd! BufWritePost,BufEnter * Neomake
+autocmd! BufWritePost,BufEnter * :call NeomakeCheckFormakeprg()
 
 " ==================================================================================
 " GUI options
@@ -190,5 +197,22 @@ set vb t_vb=
 " ==================================================================================
 " Functions
 " ==================================================================================
+
+" Check if makeprg has been changed and run the appropriate Neomake command
+function NeomakeCheckFormakeprg()
+  if &makeprg=="make"
+    Neomake
+  else
+    Neomake!
+  endif
+endfunction
+
+
+
+
+
+
+
+
 
 
