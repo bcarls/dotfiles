@@ -154,9 +154,9 @@ nnoremap <silent> <Leader>p :FZF<CR>
 " Set up lightline
 """"""""""""""""""""""""""""""
 
-" let g:lightline = {
-"       \ 'colorscheme': 'dracula',
-" \}
+let g:lightline = {
+      \ 'colorscheme': 'solarized',
+\}
 
 
 """"""""""""""""""""""""""""""
@@ -175,9 +175,9 @@ autocmd! BufWritePost,BufEnter * :call NeomakeCheckFormakeprg()
 set t_Co=256
 set guifont=Inconsolata\ for\ Powerline:h15
 " Turn on solarized
-" set background=light
-" colorscheme solarized
-colorscheme dracula
+set background=dark
+colorscheme solarized
+" colorscheme dracula
 if has("gui_macvim")
   colorscheme jellybeans
 endif
