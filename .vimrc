@@ -3,7 +3,6 @@
 " The usual Vim setup
 " ==================================================================================
 set nocompatible
-source $VIMRUNTIME/vimrc_example.vim
 syntax on
 set backup
 set showcmd
@@ -85,7 +84,6 @@ Plug 'https://github.com/LaTeX-Box-Team/LaTeX-Box.git'
 Plug 'https://github.com/vim-scripts/LanguageTool.git'
 Plug 'https://github.com/junegunn/fzf.vim.git'
 Plug 'https://github.com/itchyny/lightline.vim.git'
-" Plug 'https://github.com/scrooloose/syntastic.git'
 Plug 'https://github.com/benekastah/neomake.git'
 Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
@@ -156,9 +154,9 @@ nnoremap <silent> <Leader>p :FZF<CR>
 " Set up lightline
 """"""""""""""""""""""""""""""
 
-let g:lightline = {
-      \ 'colorscheme': 'solarized',
-\}
+" let g:lightline = {
+"       \ 'colorscheme': 'dracula',
+" \}
 
 
 """"""""""""""""""""""""""""""
@@ -177,8 +175,9 @@ autocmd! BufWritePost,BufEnter * :call NeomakeCheckFormakeprg()
 set t_Co=256
 set guifont=Inconsolata\ for\ Powerline:h15
 " Turn on solarized
-set background=light
-colorscheme solarized
+" set background=light
+" colorscheme solarized
+colorscheme dracula
 if has("gui_macvim")
   colorscheme jellybeans
 endif
