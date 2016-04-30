@@ -89,6 +89,8 @@ Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/tpope/vim-sensible.git'
 Plug 'https://github.com/tpope/vim-sleuth.git'
+Plug 'whatyouhide/vim-gotham'
+Plug 'chriskempson/base16-vim'
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -154,9 +156,9 @@ nnoremap <silent> <Leader>p :FZF<CR>
 " Set up lightline
 """"""""""""""""""""""""""""""
 
-let g:lightline = {
-      \ 'colorscheme': 'solarized',
-\}
+" let g:lightline = {
+"       \ 'colorscheme': 'gotham256',
+" \}
 
 
 """"""""""""""""""""""""""""""
@@ -169,18 +171,13 @@ autocmd! BufWritePost,BufEnter * :call NeomakeCheckFormakeprg()
 
 " ==================================================================================
 " GUI options
-" The statusline options appear under plugins since I am using powerline
+" The statusline options appear under plugins since I am using lightline
 " ==================================================================================
 
 set t_Co=256
 set guifont=Inconsolata\ for\ Powerline:h15
-" Turn on solarized
-set background=dark
-colorscheme solarized
-" colorscheme dracula
-if has("gui_macvim")
-  colorscheme jellybeans
-endif
+" set background=light
+colorscheme base16-ocean
 set guioptions=ageimrLt
 set showtabline=1
 " set cursorline " Turn on the line shadowing indicating where the cursor is
