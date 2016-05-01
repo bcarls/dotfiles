@@ -2,6 +2,7 @@
 " ==================================================================================
 " The usual Vim setup
 " ==================================================================================
+
 set nocompatible
 syntax on
 set backup
@@ -12,6 +13,7 @@ autocmd BufNewFile,BufRead *.tex setlocal spell " Turn on spell check for Latex
 " ==================================================================================
 " Setup tab and related options, let vim-sleuth adjust it
 " ==================================================================================
+
 set autoindent 
 set expandtab
 set shiftwidth=8
@@ -27,9 +29,9 @@ set smarttab      " insert tabs on the start of a line according to
 " ==================================================================================
 " Movement and other personalized keystrokes
 " ==================================================================================
+
 " change the mapleader from \ to ,
 let mapleader=","
-" inoremap jk <Esc>
 " Jumps to next row in editor in the case of wrapped lines
 nnoremap j gj
 nnoremap k gk
@@ -57,6 +59,7 @@ omap lp ?^$\\|^\s*\(\\begin\\|\\end\\|\\label\)?1<CR>//-1<CR>.<CR>:nohlsearch<CR
 " Make searching easier
 " A lot of this came from http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 " ==================================================================================
+
 nnoremap / /\v
 vnoremap / /\v
 set ignorecase
@@ -91,6 +94,7 @@ Plug 'https://github.com/tpope/vim-sensible.git'
 Plug 'https://github.com/tpope/vim-sleuth.git'
 Plug 'whatyouhide/vim-gotham'
 Plug 'chriskempson/base16-vim'
+Plug 'junegunn/seoul256.vim'
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -175,8 +179,7 @@ autocmd! BufWritePost,BufEnter * :call NeomakeCheckFormakeprg()
 " ==================================================================================
 
 set t_Co=256
-set guifont=Inconsolata\ for\ Powerline:h15
-" set background=light
+set background=dark
 colorscheme base16-ocean
 set guioptions=ageimrLt
 set showtabline=1
