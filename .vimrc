@@ -92,9 +92,7 @@ Plug 'https://github.com/tpope/vim-commentary.git'
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 Plug 'https://github.com/tpope/vim-sensible.git'
 Plug 'https://github.com/tpope/vim-sleuth.git'
-Plug 'whatyouhide/vim-gotham'
 Plug 'chriskempson/base16-vim'
-Plug 'junegunn/seoul256.vim'
 " Add plugins to &runtimepath
 call plug#end()
 
