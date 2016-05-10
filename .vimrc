@@ -119,7 +119,7 @@ autocmd FileType c,cpp,cs,java setlocal commentstring=//\ %s
 """"""""""""""""""""""""""""""
 " Set up languagetool
 """"""""""""""""""""""""""""""
-let g:languagetool_jar = "$HOME/LanguageTool-3.1/languagetool-commandline.jar"
+let g:languagetool_jar = "$HOME/LanguageTool-3.3/languagetool-commandline.jar"
 
 
 """"""""""""""""""""""""""""""
