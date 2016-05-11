@@ -1,3 +1,5 @@
+# This is depreciated, go to GitLab
+
 # dotfiles
 
 This repository stores all of my dotfiles. To install:
